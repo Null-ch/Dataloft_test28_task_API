@@ -2,8 +2,11 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Car;
+use App\Models\Brand;
+use App\Models\CarModel;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Brand::factory()->count(10)->create();
+        CarModel::factory()->count(10)->create();
+        Car::factory()->count(10)->create();
     }
 }
