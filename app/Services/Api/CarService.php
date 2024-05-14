@@ -3,7 +3,6 @@
 namespace App\Services\Api;
 
 use App\Models\Car;
-use Illuminate\Http\Request;
 use App\Http\Requests\CarStoreRequest;
 use App\Http\Requests\CarUpdateRequest;
 

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Brand;
-use Illuminate\Http\Request;
 use App\Services\Api\BrandService;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BrandResource;
